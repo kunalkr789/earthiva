@@ -14,7 +14,7 @@ export function Hero(){
     <motion.p initial={{opacity:0,y:24}} animate={{opacity:1,y:0}} transition={{delay:.2}} className="mt-6 max-w-xl text-lg leading-8 text-ink/75">Premium herbal powders for daily skincare and haircare rituals. Simple ingredients, beautiful packaging, and trust-first Amazon-ready branding.</motion.p>
     <motion.div initial={{opacity:0,y:24}} animate={{opacity:1,y:0}} transition={{delay:.3}} className="mt-8 flex flex-wrap gap-3">
       <a href="#products" className="rounded-full bg-clay px-7 py-3 font-bold text-white shadow-soft transition hover:-translate-y-1">Explore Products</a>
-      <a href="#contact" className="rounded-full border border-leaf px-7 py-3 font-bold text-leaf transition hover:bg-leaf hover:text-white">Build Website</a>
+      <a href="#contact" className="rounded-full border border-leaf px-7 py-3 font-bold text-leaf transition hover:bg-leaf hover:text-white">Contact</a>
     </motion.div>
     <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">{badges.map(({icon:Icon,text})=><div key={text} className="glass rounded-2xl p-3 text-center text-xs font-bold"><Icon className="mx-auto mb-2" size={22}/>{text}</div>)}</div>
    </div>
