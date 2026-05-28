@@ -50,9 +50,9 @@ export const metadata: Metadata = {
       "Explore Earthiva's earthy collection of herbal powders for glow, balance, and hair rituals.",
     images: [
       {
-        url: "/generated/earthiva-hero-banner-v6.webp",
-        width: 1694,
-        height: 929,
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
         alt: "Earthiva herbal powder collection banner",
       },
     ],
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Earthiva | Rooted In Nature",
     description:
       "Explore Earthiva's earthy collection of herbal powders for glow, balance, and hair rituals.",
-    images: ["/generated/earthiva-hero-banner-v6.webp"],
+    images: ["/twitter-image"],
   },
   icons: {
     icon: [{ url: "/icon.png", type: "image/png" }],
