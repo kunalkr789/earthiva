@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html { scroll-behavior: smooth; }
-body { background: #F7EFE3; color: #2E3320; }
-::selection { background: #D9823B55; }
-.container-pad { @apply px-5 sm:px-8 lg:px-16; }
-.glass { background: rgba(255,248,238,.78); backdrop-filter: blur(16px); border: 1px solid rgba(111,118,81,.14); }

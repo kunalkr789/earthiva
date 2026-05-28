@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --cream: #f6efe5;
+  --sand: #e8d9c5;
+  --clay: #c48a5a;
+  --bark: #5d4532;
+  --leaf: #233929;
+  --leaf-dark: #16241a;
+  --olive: #6f804a;
+  --sage: #a4b28f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--leaf);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(235, 202, 164, 0.24), transparent 26%),
+    radial-gradient(circle at 18% 18%, rgba(164, 178, 143, 0.14), transparent 18%),
+    linear-gradient(180deg, #fbf8f3 0%, #f7f1e8 46%, #f2eadf 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.32)),
+    repeating-linear-gradient(
+      135deg,
+      rgba(95, 69, 50, 0.04) 0,
+      rgba(95, 69, 50, 0.04) 1px,
+      transparent 1px,
+      transparent 9px
+    );
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(196, 138, 90, 0.22);
+  color: var(--leaf-dark);
+}
+
+:focus-visible {
+  outline: 2px solid rgba(111, 128, 74, 0.65);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto max-w-7xl px-5 lg:px-8;
+  }
+
+  .section-kicker {
+    @apply text-[0.7rem] font-extrabold uppercase tracking-[0.34em] text-olive;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl leading-[0.95] text-leaf md:text-6xl;
+  }
+
+  .earth-panel {
+    @apply rounded-[2rem] border border-bark/10 bg-white/80 shadow-soft;
+  }
+
+  .pill-button {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] transition;
+  }
+
+  .leaf-button {
+    @apply pill-button bg-leaf text-cream hover:-translate-y-0.5 hover:bg-leafDark;
+  }
+
+  .ghost-button {
+    @apply pill-button border border-leaf/15 bg-white/75 text-leaf hover:-translate-y-0.5 hover:bg-white;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
